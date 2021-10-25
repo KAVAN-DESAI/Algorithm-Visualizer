@@ -60,3 +60,28 @@ def heapify(arr, n, i):
         
         heapify(arr, n, largest)
 
+        
+        
+# Sorting Algo:Heap sort
+def heapSort(arr):
+    n = len(arr)
+    
+    for i in range(n//2 - 1, -1, -1):
+        arr_clr[i] = clr[1]
+        refill(4)
+        heapify(arr, n, i)
+ 
+    for i in range(n-1, 0, -1):
+        arr_clr[i] = clr[2]
+        arr_clr[0] = clr[2]
+        refill(4)
+        arr_clr[i] = clr[3]
+        arr_clr[0] = clr[0]
+        refill(4)
+        arr[i], arr[0] = arr[0], arr[i]
+        heapify(arr, i, 0)
+    for i in range(n):
+        arr_clr[i]=clr[3]
+        
+        
+        
