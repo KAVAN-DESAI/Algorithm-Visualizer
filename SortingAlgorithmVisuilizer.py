@@ -85,3 +85,50 @@ def heapSort(arr):
         
         
         
+        
+
+def quickSortPartition(start, end, array):
+      
+    
+    pivot_index = start 
+    pivot = array[pivot_index]
+    arr_clr[pivot_index] = clr[4]
+      
+    
+    while start < end:
+        while start < len(array) and array[start] <= pivot:
+            arr_clr[start] = clr[1]
+            refill(3)
+            arr_clr[start] = clr[0]
+            start += 1
+              
+        
+        while array[end] > pivot:
+            arr_clr[end] = clr[2]
+            refill(3)
+            arr_clr[end] = clr[0]
+            end -= 1
+          
+        
+        if(start < end):
+            arr_clr[start] = clr[1]
+            arr_clr[end] = clr[2]
+            refill(3)
+            array[start], array[end] = array[end], array[start]
+            arr_clr[start] = clr[2]
+            arr_clr[end] = clr[1]
+            refill(3)
+            arr_clr[start] = clr[0]
+            arr_clr[end] = clr[0]
+    
+    arr_clr[end] = clr[2]
+    refill(3)
+    array[end], array[pivot_index] = array[pivot_index], array[end]
+    arr_clr[end] = clr[2]
+    arr_clr[pivot_index] = clr[4]
+    refill(3)
+    arr_clr[end] = clr[0]
+    arr_clr[pivot_index] = clr[0]
+     
+    
+    return end
