@@ -132,3 +132,16 @@ def quickSortPartition(start, end, array):
      
     
     return end
+
+  
+# Sorting Algo:Quick sort
+def quickSort(start, end, array):
+    if (start < end):
+        p = quickSortPartition(start, end, array)
+        quickSort(start, p - 1, array)
+        quickSort(p + 1, end, array)
+    for i in range(end+1):
+        arr_clr[i]=clr[3]
+        
+        
+        
