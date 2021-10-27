@@ -143,5 +143,11 @@ def quickSort(start, end, array):
     for i in range(end+1):
         arr_clr[i]=clr[3]
         
-        
+# Sorting Algo:Bubble sort
+def bubblesort(array):
+    pygame.event.pump()
+    n = len(array)
+    for i in range(n):
+        for j in range(0, n-i-1):
+          
         
