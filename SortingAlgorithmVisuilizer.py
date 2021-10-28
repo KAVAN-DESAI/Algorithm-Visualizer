@@ -159,3 +159,10 @@ def bubblesort(array):
     for i in range(n):
         arr_clr[i]=clr[3]
         
+# Generate new Array
+def generate_arr():
+    for i in range(1, sz+1):
+        
+
+
+        
