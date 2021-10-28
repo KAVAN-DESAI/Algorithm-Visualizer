@@ -162,7 +162,8 @@ def bubblesort(array):
 # Generate new Array
 def generate_arr():
     for i in range(1, sz+1):
-        
+        arr_clr[i] = clr[0]
+        array[i] = random.randrange(1, 90)
 
 
         
