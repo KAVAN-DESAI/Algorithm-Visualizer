@@ -166,4 +166,7 @@ def generate_arr():
         array[i] = random.randrange(1, 90)
 
 
-        
+# Refill
+def refill(x):
+    screen.fill((255, 255, 255))
+      
