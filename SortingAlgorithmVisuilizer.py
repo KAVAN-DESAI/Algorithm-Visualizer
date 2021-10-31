@@ -171,4 +171,10 @@ def refill(x):
     screen.fill((255, 255, 255))
     draw(x)
     pygame.display.update()
-    pygame.time.delay(50)     
+    pygame.time.delay(50)
+    
+# Sorting Algo:Merge sort
+def mergesort(array, l, r):
+    mid = (l + r)//2
+    if l < r:
+      
