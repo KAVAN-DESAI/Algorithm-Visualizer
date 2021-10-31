@@ -177,4 +177,6 @@ def refill(x):
 def mergesort(array, l, r):
     mid = (l + r)//2
     if l < r:
-      
+      mergesort(array, l, mid)
+      mergesort(array, mid + 1, r)
+      merge(array, l, mid,mid + 1, r)
