@@ -211,4 +211,13 @@ def merge(array, x1, y1, x2, y2):
         temp.append(array[j])
         j += 1
     j = 0
-    
+    for i in range(x1, y2 + 1):
+        pygame.event.pump()
+        array[i] = temp[j]
+        j += 1
+        arr_clr[i] = clr[2]
+        refill(1)
+        if y2-x1 == len(array)-2:
+            arr_clr[i] = clr[3]
+        else:
+            arr_clr[i] = clr[0]
