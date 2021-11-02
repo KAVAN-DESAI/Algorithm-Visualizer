@@ -221,3 +221,36 @@ def merge(array, x1, y1, x2, y2):
             arr_clr[i] = clr[3]
         else:
             arr_clr[i] = clr[0]
+
+# Draw the array values
+def draw(x):
+    # x : number of sort tochange heading
+    if(x==1):
+        txt2 = fnt1.render("ALGORITHM USED: Merge Sort", 1, (0, 0, 0))
+        screen.blit(txt2, (300, 60))
+    elif(x==2):
+        txt2 = fnt1.render("ALGORITHM USED: Bubble Sort", 1, (0, 0, 0))
+        screen.blit(txt2, (300, 60))
+    elif(x==3):
+        txt2 = fnt1.render("ALGORITHM USED: Quick Sort", 1, (0, 0, 0))
+        screen.blit(txt2, (300, 60))
+    elif(x==4):
+        txt2 = fnt1.render("ALGORITHM USED: Heap Sort", 1, (0, 0, 0))
+        screen.blit(txt2, (300, 60))
+    else:
+         # Text should be rendered
+        txt = fnt2.render("PRESS 'a' to perform Merge Sort", 1, (0, 0, 0))
+        # Position where text is placed
+        screen.blit(txt, (20, 20))
+        txt = fnt2.render("PRESS 'b' to perform Bubble Sort", 1, (0, 0, 0))
+        screen.blit(txt, (20, 40))
+        txt = fnt2.render("PRESS 'c' to perform Quick Sort", 1, (0, 0, 0))
+        screen.blit(txt, (20, 60))
+        txt = fnt2.render("PRESS 'd' to perform Heap Sort", 1, (0, 0, 0))
+        screen.blit(txt, (20, 80))
+        txt1 = fnt2.render("PRESS 'R' FOR NEW ARRAY.",1, (0, 0, 0))
+        screen.blit(txt1, (20, 100))
+        txt = fnt1.render("Enter the size of Array :-", 1, (0, 0, 0))
+        screen.blit(txt, (360, 17))
+
+    
