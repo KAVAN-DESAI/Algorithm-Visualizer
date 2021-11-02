@@ -253,4 +253,21 @@ def draw(x):
         txt = fnt1.render("Enter the size of Array :-", 1, (0, 0, 0))
         screen.blit(txt, (360, 17))
 
-    
+    element_width =(width-(sz+1))//(sz+1)
+    boundry_arr = 900 / (sz+1)
+    boundry_grp = 550 / 100
+    pygame.draw.line(screen, (0, 0, 0), (0, 120), (900, 120), 6)
+    for i in range(1, 100):
+        # pygame.draw.line(surface, color, start_pos, end_pos, width=1)
+        pygame.draw.line(screen, 
+                        (224, 224, 224), 
+                        (0, boundry_grp * i + 125), 
+                        (900, boundry_grp * i + 125), 1)
+      
+    # Drawing the array values as lines
+    for i in range(1, sz+1):
+        pygame.draw.line(screen, arr_clr[i],\
+            (boundry_arr * i-3, 125),\
+            (boundry_arr * i-3, array[i]*boundry_grp + 125),\
+            element_width)            
+
