@@ -271,3 +271,12 @@ def draw(x):
             (boundry_arr * i-3, array[i]*boundry_grp + 125),\
             element_width)            
 
+toggle=True# sorting window
+# Infinite loop to keep the window open
+while run:
+    # background
+    screen.fill((255, 255, 255))
+    if toggle:
+        draw(0)
+    else:
+        draw_graph(0)        
