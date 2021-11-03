@@ -280,3 +280,9 @@ while run:
         draw(0)
     else:
         draw_graph(0)        
+    # pygame.display.updat()
+    # Event handler stores all event
+    for event in pygame.event.get():
+        # If we click Close button in window
+        if event.type == pygame.QUIT:
+            run = False
