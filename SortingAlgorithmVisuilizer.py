@@ -287,7 +287,10 @@ while run:
         if event.type == pygame.QUIT:
             run = False
         if event.type == pygame.MOUSEBUTTONDOWN:
-            
+            pos = pygame.mouse.get_pos()
+            print(pos)
+            if (pos[1]<=79 and pos[0]>=580 and pos[1]>=48 and pos[0]<=616) or (pos[1]>=48 and pos[0]>=640 and pos[1]<=78 and pos[0]<=664):
+                toggle= not toggle
             if input_rect.collidepoint(event.pos):
                 active = True
             else:
