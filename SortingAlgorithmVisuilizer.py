@@ -286,4 +286,11 @@ while run:
         # If we click Close button in window
         if event.type == pygame.QUIT:
             run = False
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            
+            if input_rect.collidepoint(event.pos):
+                active = True
+            else:
+                active = False
+
 
