@@ -299,5 +299,8 @@ while run:
                 if pos[1]<=20 and pos[1]>=7 and pos[0]>=600 and pos[0]<=615 and source_set:
                     source=True
                     destination=False
+                if pos[1]<=42 and pos[1]>=28 and pos[0]>=600 and pos[0]<=615 and destination_set:
+                    destination=True
+                    source=False
 
 
