@@ -295,5 +295,9 @@ while run:
                 active = True
             else:
                 active = False
+            if not toggle:
+                if pos[1]<=20 and pos[1]>=7 and pos[0]>=600 and pos[0]<=615 and source_set:
+                    source=True
+                    destination=False
 
 
