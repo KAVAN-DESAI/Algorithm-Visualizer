@@ -286,6 +286,11 @@ while run:
         # If we click Close button in window
         if event.type == pygame.QUIT:
             run = False
+        pos = pygame.mouse.get_pos()
+        if event.type == pygame.MOUSEBUTTONDOWN and not toggle:
+            x,y=getClickedPostition(pos)
+            print(source, " ", destination)
+            print(npMatrix_clr[x+1][y], " ", npMatrix_clr[x][y])
         
 
 
