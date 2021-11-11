@@ -289,8 +289,14 @@ while run:
         pos = pygame.mouse.get_pos()
         if event.type == pygame.MOUSEBUTTONDOWN and not toggle:
             x,y=getClickedPostition(pos)
-            print(source, " ", destination)
-            print(npMatrix_clr[x+1][y], " ", npMatrix_clr[x][y])
+            if source:
+                npMatrix_clr[x][y]=clr[0]
+                source_set=True
+                source=False
+                source_tile=(x,y)
+                pygame.draw.rect(screen, clr[0],source_rect)
+                draw_graph(0)
+                continue
         
 
 
