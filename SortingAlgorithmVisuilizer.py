@@ -297,6 +297,14 @@ while run:
                 pygame.draw.rect(screen, clr[0],source_rect)
                 draw_graph(0)
                 continue
+            if destination:
+                npMatrix_clr[x][y]=clr[2]
+                destination_set=True
+                destination=False
+                destination_tile=(x,y)
+                pygame.draw.rect(screen, clr[0],destination_rect)
+                draw_graph(0)
+                continue
         
 
 
