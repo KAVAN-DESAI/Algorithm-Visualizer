@@ -305,6 +305,11 @@ while run:
                 pygame.draw.rect(screen, clr[0],destination_rect)
                 draw_graph(0)
                 continue
+            if not source and not destination and x >= 0 and x <= 59 and y >= 0 and y <= 59:
+                npMatrix_clr[x][y]=(0,0,0)
+                removed_edges.append((x,y))
+                
+                print(x,y)    
         
 
 
