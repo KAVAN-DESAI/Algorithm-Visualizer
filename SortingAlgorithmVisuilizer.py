@@ -308,8 +308,12 @@ while run:
             if not source and not destination and x >= 0 and x <= 59 and y >= 0 and y <= 59:
                 npMatrix_clr[x][y]=(0,0,0)
                 removed_edges.append((x,y))
-                
-                print(x,y)    
+                print(x,y)
+            if pos[1]<=20 and pos[1]>=7 and pos[0]>=600 and pos[0]<=615 and not source_set:
+                source=True
+                color1=clr[0]
+                pygame.draw.rect(screen, clr[3],source_rect)
+                draw_graph(0)
         
 
 
