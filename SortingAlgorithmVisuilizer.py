@@ -314,6 +314,12 @@ while run:
                 color1=clr[0]
                 pygame.draw.rect(screen, clr[3],source_rect)
                 draw_graph(0)
+            if pos[1]<=42 and pos[1]>=27 and pos[0]>=600 and pos[0]<=615 and not destination_set:
+                print("Destination")
+                destination=True
+                color2=clr[2]
+                pygame.draw.rect(screen, clr[4],destination_rect)
+                draw_graph(0)
         
 
 
