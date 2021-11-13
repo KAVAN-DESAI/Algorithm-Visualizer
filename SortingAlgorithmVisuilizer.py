@@ -320,6 +320,10 @@ while run:
                 color2=clr[2]
                 pygame.draw.rect(screen, clr[4],destination_rect)
                 draw_graph(0)
+            draw_graph(0)
+            if destination_set:
+                destination_set=True
+                destination=False
         
 
 
