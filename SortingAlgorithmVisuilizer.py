@@ -324,6 +324,8 @@ while run:
             if destination_set:
                 destination_set=True
                 destination=False
-        
+         if event.type == pygame.MOUSEBUTTONDOWN:
+            if (pos[1]<=79 and pos[0]>=580 and pos[1]>=48 and pos[0]<=616) or (pos[1]>=48 and pos[0]>=640 and pos[1]<=78 and pos[0]<=664):
+                toggle=not toggle
 
 
