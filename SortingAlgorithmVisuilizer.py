@@ -327,5 +327,7 @@ while run:
          if event.type == pygame.MOUSEBUTTONDOWN:
             if (pos[1]<=79 and pos[0]>=580 and pos[1]>=48 and pos[0]<=616) or (pos[1]>=48 and pos[0]>=640 and pos[1]<=78 and pos[0]<=664):
                 toggle=not toggle
+         if event.type == pygame.KEYDOWN and not toggle:
+            if event.key == pygame.K_r:
 
 
