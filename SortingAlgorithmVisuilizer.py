@@ -332,5 +332,13 @@ while run:
               for i in range(61):
                     for j in range(61):
                         npMatrix_clr[i][j]=(250,250,250)
+              source=False
+              destination_set=False
+              source_set=False
+              destination=False
+              color1=(0,0,0)
+              color2=(0,0,0)
+              removed_edges=[]
+              edges=[]
 
 
