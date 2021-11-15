@@ -329,5 +329,8 @@ while run:
                 toggle=not toggle
          if event.type == pygame.KEYDOWN and not toggle:
             if event.key == pygame.K_r:
+              for i in range(61):
+                    for j in range(61):
+                        npMatrix_clr[i][j]=(250,250,250)
 
 
