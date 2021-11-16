@@ -340,5 +340,7 @@ while run:
               color2=(0,0,0)
               removed_edges=[]
               edges=[]
+          elif event.key == pygame.K_d:
+                print(removed_edges)
 
 
