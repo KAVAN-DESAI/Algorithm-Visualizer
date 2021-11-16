@@ -342,5 +342,7 @@ while run:
               edges=[]
           elif event.key == pygame.K_d:
                 print(removed_edges)
+                for i in range(61):
+                    for j in range(61):
 
 
