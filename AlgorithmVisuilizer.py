@@ -344,11 +344,21 @@ while run:
                 print(removed_edges)
                 for i in range(61):
                     for j in range(61):
-                       ok=True
+                        ok=True
                         ok1=True
                         ok2=True
                         ok3=True
                         ok4=True
                         for k in removed_edges:
+                            if k==(i,j):
+                                ok1=False
+                            if k==(i,j+1):
+                                ok1=False
+                            if k==(i,j-1):
+                                ok2=False
+                            if k==(i+1,j):
+                                ok3=False
+                            if k==(i-1,j):
+                                ok4=False
 
 
