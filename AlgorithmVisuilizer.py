@@ -361,8 +361,12 @@ while run:
                             if k==(i-1,j):
                                 ok4=False
                             if ok and ok1:
-                              edges.append([(i,j),(i,j+1)])
+                                edges.append([(i,j),(i,j+1)])
                             if ok and ok2:
-                              edges.append([(i,j),(i,j-1)])
+                                edges.append([(i,j),(i,j-1)])
+                            if ok and ok3:
+                                edges.append([(i,j),(i+1,j)])
+                            if ok and ok4:
+                                edges.append([(i,j),(i-1,j)])
 
 
