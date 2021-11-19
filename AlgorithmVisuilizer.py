@@ -371,5 +371,8 @@ while run:
                 print("X")
                 newEdges=[]
                 for j in edges:
+                   if j[0] not in removed_edges:
+                        if j[1] not in removed_edges:
+                            newEdges.append(j)
 
 
