@@ -368,5 +368,8 @@ while run:
                                 edges.append([(i,j),(i+1,j)])
                             if ok and ok4:
                                 edges.append([(i,j),(i-1,j)])
+                print("X")
+                newEdges=[]
+                for j in edges:
 
 
