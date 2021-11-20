@@ -374,5 +374,9 @@ while run:
                    if j[0] not in removed_edges:
                         if j[1] not in removed_edges:
                             newEdges.append(j)
+                graph=build_graph(newEdges)
+                path=BFS_ShortestPath(graph, source_tile, destination_tile)
+                for i in path:
+                    npMatrix_clr[i[0]][i[1]]=clr[1]
 
 
