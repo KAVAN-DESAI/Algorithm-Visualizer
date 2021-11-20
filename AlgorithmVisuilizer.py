@@ -378,5 +378,7 @@ while run:
                 path=BFS_ShortestPath(graph, source_tile, destination_tile)
                 for i in path:
                     npMatrix_clr[i[0]][i[1]]=clr[1]
+                npMatrix_clr[destination_tile[0]][destination_tile[1]]=clr[2]
+                npMatrix_clr[source_tile[0]][source_tile[1]]=clr[0]
 
 
