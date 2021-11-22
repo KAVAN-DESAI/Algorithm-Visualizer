@@ -382,5 +382,7 @@ while run:
                 npMatrix_clr[source_tile[0]][source_tile[1]]=clr[0]
                 draw_graph(0)
         if event.type == pygame.MOUSEBUTTONDOWN and toggle:
+            if input_rect.collidepoint(event.pos):
+                active = True
 
 
