@@ -384,5 +384,7 @@ while run:
         if event.type == pygame.MOUSEBUTTONDOWN and toggle:
             if input_rect.collidepoint(event.pos):
                 active = True
+            else:
+                active = False
 
 
