@@ -387,6 +387,7 @@ while run:
             else:
                 active = False
         if event.type == pygame.KEYDOWN and toggle:
+          if event.key == pygame.K_BACKSPACE:
           
 
 
