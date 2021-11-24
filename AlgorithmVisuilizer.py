@@ -388,6 +388,9 @@ while run:
                 active = False
         if event.type == pygame.KEYDOWN and toggle:
           if event.key == pygame.K_BACKSPACE:
+            if(len(user_text)==1):
+                    user_text = user_text[:-1]
+                    sz =1
           
 
 
