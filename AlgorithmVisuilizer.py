@@ -391,6 +391,9 @@ while run:
             if(len(user_text)==1):
                     user_text = user_text[:-1]
                     sz =1
+            elif(len(user_text)>1):
+                    user_text = user_text[:-1]
+                    sz = int(user_text)
           
 
 
