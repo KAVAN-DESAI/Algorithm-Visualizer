@@ -397,6 +397,9 @@ while run:
             array = [0]*(sz+1)
             arr_clr = [(0, 204, 102)]*(sz+1)
             generate_arr()
+        elif event.key == pygame.K_a:
+                active=False
+                mergesort(array, 1, len(array)-1)
                   
           
 
