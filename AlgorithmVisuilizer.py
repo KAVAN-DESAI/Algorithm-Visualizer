@@ -400,6 +400,9 @@ while run:
         elif event.key == pygame.K_a:
                 active=False
                 mergesort(array, 1, len(array)-1)
+        elif (event.key == pygame.K_b):
+                    active=False
+                    bubblesort(array)
                   
           
 
