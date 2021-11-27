@@ -403,6 +403,7 @@ while run:
         elif (event.key == pygame.K_b):
                     active=False
                     bubblesort(array)
+        elif(event.key == pygame.K_c):
                   
           
 
