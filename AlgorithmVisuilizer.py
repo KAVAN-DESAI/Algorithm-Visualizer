@@ -406,6 +406,7 @@ while run:
         elif(event.key == pygame.K_c):
                 active=False
                 quickSort(0, len(array) - 1, array)
+        elif(event.key == pygame.K_d):
                   
           
 
