@@ -410,6 +410,7 @@ while run:
                 active=False
                 heapSort(array)
         elif(event.key == pygame.K_r):
+                generate_arr()
                   
           
 
