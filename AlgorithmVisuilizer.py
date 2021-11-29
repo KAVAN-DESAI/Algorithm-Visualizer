@@ -409,6 +409,7 @@ while run:
         elif(event.key == pygame.K_d):
                 active=False
                 heapSort(array)
+        elif(event.key == pygame.K_r):
                   
           
 
