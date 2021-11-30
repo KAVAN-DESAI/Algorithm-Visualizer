@@ -412,6 +412,7 @@ while run:
         elif(event.key == pygame.K_r):
                 generate_arr()
         elif(active):
+                user_text += event.unicode
           
 
 
