@@ -413,6 +413,7 @@ while run:
                 generate_arr()
         elif(active):
                 user_text += event.unicode
+                sz = int(user_text)
           
 
 
