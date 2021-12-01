@@ -414,6 +414,8 @@ while run:
         elif(active):
                 user_text += event.unicode
                 sz = int(user_text)
+                array = [0]*(sz+1)
+                arr_clr = [(0, 204, 102)]*(sz+1)
           
 
 
