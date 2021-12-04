@@ -3,6 +3,7 @@ import random
 import numpy as np
 from queue import PriorityQueue
 from pygame import surface
+from pygame.constants import K_d
 pygame.font.init()
 
 
