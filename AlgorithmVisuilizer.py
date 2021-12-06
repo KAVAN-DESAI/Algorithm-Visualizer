@@ -26,6 +26,10 @@ clr = [(0, 204, 102), (255, 0, 0),
 matrix_clr=[[(250,250,250)]*101]*101
 matrix=[[0]*101]*101
 
+#Graph edges
+edges=[]
+removed_edges=[]
+path=[]
 
 fnt = pygame.font.SysFont("comicsans", 30)
 fnt1 = pygame.font.SysFont("comicsans", 30)
