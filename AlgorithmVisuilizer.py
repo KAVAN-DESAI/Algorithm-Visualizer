@@ -14,8 +14,9 @@ pygame.display.set_caption("SORTING VISUALISER")
 
 run = True
 
-width = 900
-length = 600
+# Window size
+width = 1000
+length = 7000
 sz = 50000
 array = [0]*(sz+1)
 arr_clr = [(0, 204, 102)]*(sz+1)
