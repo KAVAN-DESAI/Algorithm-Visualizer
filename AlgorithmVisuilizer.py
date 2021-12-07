@@ -42,6 +42,9 @@ base_font = pygame.font.Font(None, 32)
 user_text = ''
 
 input_rect = pygame.Rect(600, 10, 140, 32)
+
+toggle_circle_graph=pygame.Rect(650, 50, 16, 16)
+toggle_circle_sort=pygame.Rect(500, 50, 16, 16)
   
 
 color_active = pygame.Color('lightskyblue3')
