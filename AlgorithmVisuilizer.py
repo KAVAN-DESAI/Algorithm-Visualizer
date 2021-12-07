@@ -31,6 +31,8 @@ edges=[]
 removed_edges=[]
 path=[]
 
+npMatrix_clr = np.array([[x for x in y] for y in matrix_clr])
+
 fnt = pygame.font.SysFont("comicsans", 30)
 fnt1 = pygame.font.SysFont("comicsans", 30)
 fnt2 = pygame.font.SysFont("comicsans", 20)
