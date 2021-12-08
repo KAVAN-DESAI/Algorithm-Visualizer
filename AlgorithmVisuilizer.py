@@ -50,12 +50,13 @@ source_rect = pygame.Rect(600, 5, 18, 18)
 destination_rect = pygame.Rect(600, 27, 18, 18)
 
 color_active = pygame.Color('lightskyblue3')
-  
 
 color_passive = pygame.Color('chartreuse4')
 color = color_passive
-  
 active = False
+
+color1 = (0,0,0)
+color2=(0,0,0)
 
 
 def heapify(arr, n, i):
