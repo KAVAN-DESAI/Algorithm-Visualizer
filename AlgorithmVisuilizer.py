@@ -42,7 +42,6 @@ base_font = pygame.font.Font(None, 32)
 user_text = ''
 
 input_rect = pygame.Rect(600, 10, 140, 32)
-
 toggle_circle_graph=pygame.Rect(650, 50, 16, 16)
 toggle_circle_sort=pygame.Rect(500, 50, 16, 16)
 
@@ -57,6 +56,8 @@ active = False
 
 color1 = (0,0,0)
 color2=(0,0,0)
+
+gap = width // rows
 
 
 def heapify(arr, n, i):
