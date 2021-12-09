@@ -60,6 +60,9 @@ color2=(0,0,0)
 gap = width // rows
 
 
+def build_graph(edges):
+    graph = defaultdict(list)
+
 def heapify(arr, n, i):
     largest = i 
     l = 2 * i + 1     
@@ -81,7 +84,7 @@ def heapify(arr, n, i):
         
         heapify(arr, n, largest)
 
-        
+      
         
 # Sorting Algo:Heap sort
 def heapSort(arr):
