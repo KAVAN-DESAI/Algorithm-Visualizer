@@ -66,6 +66,9 @@ def build_graph(edges):
     # edge of the graph
     for edge in edges:
         a, b = edge[0], edge[1]
+    # Creating the graph
+    # as adjacency list
+    graph[a].append(b)
 
 def heapify(arr, n, i):
     largest = i 
