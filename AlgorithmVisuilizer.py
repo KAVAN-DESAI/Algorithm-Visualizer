@@ -62,6 +62,10 @@ gap = width // rows
 
 def build_graph(edges):
     graph = defaultdict(list)
+    # Loop to iterate over every
+    # edge of the graph
+    for edge in edges:
+        a, b = edge[0], edge[1]
 
 def heapify(arr, n, i):
     largest = i 
