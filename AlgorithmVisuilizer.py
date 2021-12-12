@@ -73,7 +73,11 @@ def build_graph(edges):
 # Function to find the shortest
 # path between two nodes of a graph
 def BFS_ShortestPath(graph, start, goal):
-
+  explored = []
+     
+  # Queue for traversing the
+  # graph in the BFS
+  queue = [[start]]
   
 def heapify(arr, n, i):
     largest = i 
