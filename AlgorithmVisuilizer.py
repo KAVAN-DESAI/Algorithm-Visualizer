@@ -70,6 +70,11 @@ def build_graph(edges):
     # as adjacency list
     graph[a].append(b)
 
+# Function to find the shortest
+# path between two nodes of a graph
+def BFS_ShortestPath(graph, start, goal):
+
+  
 def heapify(arr, n, i):
     largest = i 
     l = 2 * i + 1     
