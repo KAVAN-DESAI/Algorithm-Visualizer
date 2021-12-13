@@ -70,6 +70,7 @@ def build_graph(edges):
         # as adjacency list
         graph[a].append(b)
         graph[b].append(a)
+    return graph
 
 # Function to find the shortest
 # path between two nodes of a graph
