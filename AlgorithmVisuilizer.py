@@ -66,9 +66,10 @@ def build_graph(edges):
     # edge of the graph
     for edge in edges:
         a, b = edge[0], edge[1]
-    # Creating the graph
-    # as adjacency list
-    graph[a].append(b)
+        # Creating the graph
+        # as adjacency list
+        graph[a].append(b)
+        graph[b].append(a)
 
 # Function to find the shortest
 # path between two nodes of a graph
