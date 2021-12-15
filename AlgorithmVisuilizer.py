@@ -85,6 +85,9 @@ def BFS_ShortestPath(graph, start, goal):
   if start == goal:
       print("Same Node")
       return
+  # Loop to traverse the graph
+  # with the help of the queue
+  while queue:
   
 def heapify(arr, n, i):
     largest = i 
