@@ -90,6 +90,8 @@ def BFS_ShortestPath(graph, start, goal):
   while queue:
       path = queue.pop(0)
       node = path[-1]
+      npMatrix_clr[node[0]][node[1]]=clr[4]
+      npMatrix_clr[source_tile[0]][source_tile[1]]=clr[0]
   
 def heapify(arr, n, i):
     largest = i 
