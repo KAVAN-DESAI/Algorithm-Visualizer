@@ -88,6 +88,8 @@ def BFS_ShortestPath(graph, start, goal):
   # Loop to traverse the graph
   # with the help of the queue
   while queue:
+      path = queue.pop(0)
+      node = path[-1]
   
 def heapify(arr, n, i):
     largest = i 
