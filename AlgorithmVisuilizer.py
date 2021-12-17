@@ -94,6 +94,10 @@ def BFS_ShortestPath(graph, start, goal):
       npMatrix_clr[source_tile[0]][source_tile[1]]=clr[0]
       draw_graph(0)
       pygame.display.update()
+      # Condition to check if the
+      # current node is not visited
+      if node not in explored:
+          neighbours = graph[node]
   
 def heapify(arr, n, i):
     largest = i 
