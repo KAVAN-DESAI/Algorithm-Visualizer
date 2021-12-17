@@ -92,6 +92,8 @@ def BFS_ShortestPath(graph, start, goal):
       node = path[-1]
       npMatrix_clr[node[0]][node[1]]=clr[4]
       npMatrix_clr[source_tile[0]][source_tile[1]]=clr[0]
+      draw_graph(0)
+      pygame.display.update()
   
 def heapify(arr, n, i):
     largest = i 
