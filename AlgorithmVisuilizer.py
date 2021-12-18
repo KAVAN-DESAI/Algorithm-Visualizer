@@ -98,6 +98,9 @@ def BFS_ShortestPath(graph, start, goal):
       # current node is not visited
       if node not in explored:
           neighbours = graph[node]
+           # Loop to iterate over the
+           # neighbours of the node
+           for neighbour in neighbours:
   
 def heapify(arr, n, i):
     largest = i 
