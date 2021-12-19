@@ -104,6 +104,9 @@ def BFS_ShortestPath(graph, start, goal):
               new_path = list(path)
               new_path.append(neighbour)
               queue.append(new_path)
+              # Condition to check if the
+              # neighbour node is the goal
+              if neighbour == goal:
                  
   
 def heapify(arr, n, i):
