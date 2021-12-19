@@ -103,6 +103,8 @@ def BFS_ShortestPath(graph, start, goal):
            for neighbour in neighbours:
               new_path = list(path)
               new_path.append(neighbour)
+              queue.append(new_path)
+                 
   
 def heapify(arr, n, i):
     largest = i 
