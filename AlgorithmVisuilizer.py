@@ -107,6 +107,8 @@ def BFS_ShortestPath(graph, start, goal):
               # Condition to check if the
               # neighbour node is the goal
               if neighbour == goal:
+                print("Shortest path = ", *new_path)
+                return new_path
                  
   
 def heapify(arr, n, i):
