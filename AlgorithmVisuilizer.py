@@ -109,6 +109,7 @@ def BFS_ShortestPath(graph, start, goal):
               if neighbour == goal:
                 print("Shortest path = ", *new_path)
                 return new_path
+            explored.append(node)
                  
   
 def heapify(arr, n, i):
