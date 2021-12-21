@@ -110,6 +110,11 @@ def BFS_ShortestPath(graph, start, goal):
                 print("Shortest path = ", *new_path)
                 return new_path
             explored.append(node)
+  # Condition when the nodes
+  # are not connected
+  print("So sorry, but a connecting"\
+                "path doesn't exist :(")
+  return
                  
   
 def heapify(arr, n, i):
