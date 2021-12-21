@@ -300,6 +300,8 @@ def merge(array, x1, y1, x2, y2):
         else:
             arr_clr[i] = clr[0]
 
+def getClickedPostition(position):
+  
 # Draw the array values
 def draw(x):
     # x : number of sort tochange heading
