@@ -1,2 +1,2 @@
-# Sorting-Algorithm-Visualizer-
-Sorting Algorithm Visualizer using Python
+# Algorithm-Visualizer-
+Algorithm Visualizer using Python
